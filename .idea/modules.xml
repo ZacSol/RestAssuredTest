@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/RestAssuredTest.iml" filepath="$PROJECT_DIR$/.idea/RestAssuredTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/thisYoutubeTutorialSucks.iml" filepath="$PROJECT_DIR$/thisYoutubeTutorialSucks/thisYoutubeTutorialSucks.iml" />
+    </modules>
+  </component>
+</project>

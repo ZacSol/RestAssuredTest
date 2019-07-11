@@ -1,6 +1,7 @@
 package com.fluentWait.test;
 
 import com.fluentWait.framework.RestAssuredConfiguration;
+import com.fluentWait.test.bin.CustomerBin;
 import com.fluentWait.test.common.EndPoint;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -55,7 +56,19 @@ public class Customer {
         softAssert.assertAll();
 
         // // Java Objects
-
+        CustomerBin customerBin = response.as(CustomerBin.class);
+        // 1. Hard Assertion
+        Assert.assertEquals(customerBin.getFirstName(),"Fiona");
+        Assert.assertEquals(customerBin.getLastName(),"Glennann");
+        Assert.assertEquals(customerBin.getPhone(),"555-555-1221");
+        Assert.assertEquals(customerBin.getCity(),"L.A.");
+        // 2. Soft Assertion
+        SoftAssert newSoftAssert = new SoftAssert();
+        newSoftAssert.assertEquals(customerBin.getFirstName(),"Fiona", "First name do not match expected.");
+        newSoftAssert.assertEquals(customerBin.getLastName(),"Glennann", "Last name do not match expected.");
+        newSoftAssert.assertEquals(customerBin.getCity(),"L.A.","The location does not match expected.");
+        newSoftAssert.assertEquals(customerBin.getPhone(),"555-555-1221","The phone number does not match expected value.");
+        newSoftAssert.assertAll();
 
     }
     @Test(groups = "demo") // http://localhost:8080/api/v1/customers/3

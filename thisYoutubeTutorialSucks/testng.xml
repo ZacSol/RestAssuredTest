@@ -4,7 +4,7 @@
     <test name="Api Test">
         <groups>
             <run>
-                <include name="response"/>
+                <include name="demo"/>
             </run>
         </groups>
         <packages>

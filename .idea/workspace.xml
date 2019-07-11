@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1987d70-2bcc-4613-9d47-1f50c302ff75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thisYoutubeTutorialSucks/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/thisYoutubeTutorialSucks/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thisYoutubeTutorialSucks/target/test-classes/com/fluentWait/test/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/thisYoutubeTutorialSucks/target/test-classes/com/fluentWait/test/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thisYoutubeTutorialSucks/thisYoutubeTutorialSucks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/thisYoutubeTutorialSucks/thisYoutubeTutorialSucks.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/zsollecito.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thisYoutubeTutorialSucks/src/main/java/com/fluentWait/framework/RestAssuredConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/thisYoutubeTutorialSucks/src/main/java/com/fluentWait/framework/RestAssuredConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/common/EndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/common/EndPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thisYoutubeTutorialSucks/target/classes/com/fluentWait/framework/RestAssuredConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/thisYoutubeTutorialSucks/target/classes/com/fluentWait/framework/RestAssuredConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thisYoutubeTutorialSucks/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/thisYoutubeTutorialSucks/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/thisYoutubeTutorialSucks/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,26 +23,27 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/src/main/java/com/fluentWait/framework/RestAssuredConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/common/EndPoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="595">
+              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/testng.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="864">
+              <caret line="68" column="83" selection-start-line="68" selection-start-column="83" selection-end-line="68" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -61,10 +63,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/thisYoutubeTutorialSucks/testng.xml" />
         <option value="$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/bin/CustomerBin.java" />
         <option value="$PROJECT_DIR$/thisYoutubeTutorialSucks/pom.xml" />
         <option value="$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/Customer.java" />
+        <option value="$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/GoogleApi.java" />
+        <option value="$PROJECT_DIR$/thisYoutubeTutorialSucks/src/main/java/com/fluentWait/framework/RestAssuredConfiguration.java" />
+        <option value="$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/common/EndPoint.java" />
+        <option value="$PROJECT_DIR$/thisYoutubeTutorialSucks/testng.xml" />
       </list>
     </option>
   </component>
@@ -133,6 +138,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RestAssuredTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestAssuredTest" type="462c0819:PsiDirectoryNode" />
+              <item name="thisYoutubeTutorialSucks" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RestAssuredTest" type="b2602c69:ProjectViewProjectNode" />
@@ -230,12 +244,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_zsollecito_Documents_Repos_RestAssuredTest_thisYoutubeTutorialSucks_testng_xml - 2019.07.11 at 14h 33m 53s.xml">
-      <configuration name="C:/Users/zsollecito/Documents/Repos/RestAssuredTest/thisYoutubeTutorialSucks/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_zsollecito_Documents_Repos_RestAssuredTest_thisYoutubeTutorialSucks_testng_xml - 2019.07.11 at 14h 36m 13s.xml">
-      <configuration name="C:/Users/zsollecito/Documents/Repos/RestAssuredTest/thisYoutubeTutorialSucks/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_zsollecito_Documents_Repos_RestAssuredTest_thisYoutubeTutorialSucks_testng_xml - 2019.07.11 at 14h 43m 46s.xml">
       <configuration name="C:/Users/zsollecito/Documents/Repos/RestAssuredTest/thisYoutubeTutorialSucks/testng.xml" configurationId="TestNG" />
     </history-entry>
@@ -260,12 +268,18 @@
     <history-entry file="C__Users_zsollecito_Documents_Repos_RestAssuredTest_thisYoutubeTutorialSucks_testng_xml - 2019.07.11 at 14h 52m 53s.xml">
       <configuration name="C:/Users/zsollecito/Documents/Repos/RestAssuredTest/thisYoutubeTutorialSucks/testng.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_zsollecito_Documents_Repos_RestAssuredTest_thisYoutubeTutorialSucks_testng_xml - 2019.07.11 at 16h 32m 25s.xml">
+      <configuration name="C:/Users/zsollecito/Documents/Repos/RestAssuredTest/thisYoutubeTutorialSucks/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_zsollecito_Documents_Repos_RestAssuredTest_thisYoutubeTutorialSucks_testng_xml - 2019.07.11 at 16h 35m 42s.xml">
+      <configuration name="C:/Users/zsollecito/Documents/Repos/RestAssuredTest/thisYoutubeTutorialSucks/testng.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16950959" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16950959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -289,8 +303,8 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Maven" order="6" sideWeight="0.7453954" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Run" order="8" sideWeight="0.79739976" weight="0.3496802" />
-      <window_info anchor="right" id="Messages" order="9" sideWeight="0.25460455" side_tool="true" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Run" order="8" sideWeight="0.7963164" visible="true" weight="0.3496802" />
+      <window_info anchor="right" id="Messages" order="9" sideWeight="0.20368364" side_tool="true" visible="true" weight="0.3496802" />
     </layout>
   </component>
   <component name="debuggerHistoryManager">
@@ -328,27 +342,10 @@
         <state relative-caret-position="-383" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/src/main/java/com/fluentWait/framework/RestAssuredConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/common/EndPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
           <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -359,13 +356,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/Customer.java">
+    <entry file="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/src/main/java/com/fluentWait/framework/RestAssuredConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+        <state relative-caret-position="595">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/GoogleApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/common/EndPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/src/test/java/com/fluentWait/test/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="68" column="83" selection-start-line="68" selection-start-column="83" selection-end-line="68" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thisYoutubeTutorialSucks/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
         </state>
       </provider>
     </entry>

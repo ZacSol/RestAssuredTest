@@ -9,6 +9,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.util.concurrent.TimeUnit;
+
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
 
@@ -35,6 +37,8 @@ public class Customer {
         given().spec(requestSpecification).get(EndPoint.GET_CUSTOMER_QUERY_PARAM).then().statusCode(200).log().all();
         // Getting Response
         Response response = given().spec(requestSpecification).get(EndPoint.GET_CUSTOMER_QUERY_PARAM);
+        // Test that the response is coming in within the specified time limit
+        Assert.assertTrue(response.getTimeIn(TimeUnit.MILLISECONDS)<=10000,"Response time is not within the specified limit.");
         // // Inline Validation
         // 1. Hard Assertion: If one value fails, execution is ended
         response.then().body("firstName",equalTo("Fiona")).body("lastName",equalTo("Glennann"));

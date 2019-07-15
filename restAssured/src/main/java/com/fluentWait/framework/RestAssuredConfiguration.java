@@ -11,7 +11,7 @@ public class RestAssuredConfiguration {
 
     @BeforeSuite(alwaysRun = true)
     public void configure(){
-        System.out.println("configure method ran");
+//        System.out.println("configure method ran");
 
         RestAssured.baseURI = "http://localhost";
         RestAssured.port = 8080;

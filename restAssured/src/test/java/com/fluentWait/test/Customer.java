@@ -21,19 +21,19 @@ public class Customer {
 
     @Test
     public void validateCustomer(){
-        System.out.println("Hitting test method validateCustomer");
+        System.out.println("\nHitting test method validateCustomer");
         given().get("http://localhost:8080/api/v1/customers").then().statusCode(200).log().all();
     }
 
     @Test(groups = "demo")
     public void validateCustomer2(){
-        System.out.println("Hitting test method: validateCustomer2");
+        System.out.println("\nHitting test method: validateCustomer2");
         given().get(EndPoint.GET_CUSTOMERS).then().statusCode(200).log().all();
     }
 
     @Test(groups = {"demo","response"}) // http://localhost:8080/api/v1/customers/getCustomerQuery?id=3
     public void validateQueryParameter(){
-        System.out.println("Hitting test method: validateQueryParameter");
+        System.out.println("\nHitting test method: validateQueryParameter");
         RequestSpecification requestSpecification = new RestAssuredConfiguration().getRequestSpecification();
         requestSpecification.queryParam("id",3).log().all();
         // Checks for 200 status code, not any returned data
@@ -80,7 +80,7 @@ public class Customer {
     }
     @Test(groups = "demo") // http://localhost:8080/api/v1/customers/3
     public void validatePathParameter(){
-        System.out.println("Hitting test method: validatePathParameter");
+        System.out.println("\nHitting test method: validatePathParameter");
         RequestSpecification requestSpecification = new RestAssuredConfiguration().getRequestSpecification();
         requestSpecification.pathParam("id",3).log().all();
         given().spec(requestSpecification).get(EndPoint.GET_CUSTOMER_PATH_PARAM).then().statusCode(200).log().all();
@@ -88,7 +88,7 @@ public class Customer {
 
     @Test(groups = {"demo","form"})
     public void submitForm(){
-        System.out.println("Hitting test method: submitForm");
+        System.out.println("\nHitting test method: submitForm");
         // Create new JSON object for customer data
         JsonObject newCustomer = new JsonObject();
         newCustomer.addProperty("firstName","John");
@@ -106,14 +106,14 @@ public class Customer {
 
     @Test(groups = {"demo","fails","404"})
     public void getBadAddress(){
-        System.out.println("Hitting test method: getBadAddress");
+        System.out.println("\nHitting test method: getBadAddress");
         RequestSpecification requestSpecification = new RestAssuredConfiguration().getRequestSpecification();
         given().spec(requestSpecification).get("/doesntExist").then().statusCode(404).log().all();
     }
 
     @Test(groups = {"demo","fails","415"})
     public void unsupportedMediaType(){
-        System.out.println("Hitting test method: unsupportedMediaType");
+        System.out.println("\nHitting test method: unsupportedMediaType");
         RequestSpecification requestSpecification = new RestAssuredConfiguration().getRequestSpecHTML();
         requestSpecification.accept(ContentType.JSON).formParams("id",3).log().all();
         given().spec(requestSpecification).post(EndPoint.POST_CUSTOMER_PARAM).then().statusCode(415).log().all();

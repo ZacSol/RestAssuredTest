@@ -91,12 +91,12 @@ public class Customer {
 //        given().spec(requestSpecification).post(EndPoint.POST_CUSTOMER_PARAM).then().statusCode(201).log().all();
 //    }
 
-    @Test(groups = "form")
+    @Test(groups = {"demo","form"})
     public void submitForm(){
         // Create new JSON object for customer data
         JsonObject newCustomer = new JsonObject();
-        newCustomer.addProperty("firstName","Bob");
-        newCustomer.addProperty("lastName","Smith");
+        newCustomer.addProperty("firstName","John");
+        newCustomer.addProperty("lastName","Doe");
         newCustomer.addProperty("city","Dallas");
         newCustomer.addProperty("phone","817-555-5555");
         // Send object data
@@ -108,13 +108,13 @@ public class Customer {
                 .then().statusCode(201).log().all();
     }
 
-    @Test(groups = {"fails","404"})
+    @Test(groups = {"demo","fails","404"})
     public void getBadAddress(){
         RequestSpecification requestSpecification = new RestAssuredConfiguration().getRequestSpecification();
         given().spec(requestSpecification).get("/doesntExist").then().statusCode(404).log().all();
     }
 
-    @Test(groups = {"fails","415"})
+    @Test(groups = {"demo","fails","415"})
     public void unsupportedMediaType(){
         RequestSpecification requestSpecification = new RestAssuredConfiguration().getRequestSpecHTML();
         requestSpecification.accept(ContentType.JSON).formParams("id",3).log().all();

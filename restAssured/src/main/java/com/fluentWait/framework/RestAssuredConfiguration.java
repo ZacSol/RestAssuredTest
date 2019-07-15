@@ -6,7 +6,6 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
-import sun.misc.Request;
 
 public class RestAssuredConfiguration {
 

@@ -6,12 +6,13 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
+import sun.misc.Request;
 
 public class RestAssuredConfiguration {
 
     @BeforeSuite(alwaysRun = true)
     public void configure(){
-        System.out.println("inside configure method");
+        System.out.println("configure method ran");
 
         RestAssured.baseURI = "http://localhost";
         RestAssured.port = 8080;
@@ -34,6 +35,10 @@ public class RestAssuredConfiguration {
 
     public RequestSpecification getRequestSpecification(){
         return RestAssured.given().contentType(ContentType.JSON);
+    }
+
+    public RequestSpecification getRequestSpecHTML(){
+        return RestAssured.given().contentType(ContentType.HTML);
     }
 
     public Response getResponse(RequestSpecification requestSpecification, String endpoint, int status){

@@ -3,6 +3,9 @@ package com.fluentWait.test;
 import com.fluentWait.framework.RestAssuredConfiguration;
 import com.fluentWait.test.bin.CustomerBin;
 import com.fluentWait.test.common.EndPoint;
+import com.google.gson.JsonObject;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
@@ -81,11 +84,51 @@ public class Customer {
         requestSpecification.pathParam("id",3).log().all();
         given().spec(requestSpecification).get(EndPoint.GET_CUSTOMER_PATH_PARAM).then().statusCode(200).log().all();
     }
-//    @Test(groups = "form")
+//    @Test(groups = "form") // currently returns 400
 //    public void validateFormParameters(){
 //        RequestSpecification requestSpecification = new RestAssuredConfiguration().getRequestSpecification();
 //        requestSpecification.accept(ContentType.JSON).formParams("id",3).log().all();
-//        given().spec(requestSpecification).post(EndPoint.POST_CUSTOMER_PARAM).then().statusCode(200).log().all();
+//        given().spec(requestSpecification).post(EndPoint.POST_CUSTOMER_PARAM).then().statusCode(201).log().all();
+//    }
+
+    @Test(groups = "form")
+    public void submitForm(){
+        // Create new JSON object for customer data
+        JsonObject newCustomer = new JsonObject();
+        newCustomer.addProperty("firstName","Bob");
+        newCustomer.addProperty("lastName","Smith");
+        newCustomer.addProperty("city","Dallas");
+        newCustomer.addProperty("phone","817-555-5555");
+        // Send object data
+        RequestSpecification requestSpecification = new RestAssuredConfiguration().getRequestSpecification();
+        given().spec(requestSpecification).body(newCustomer.toString())
+                .when()
+                .post("/customers")
+//                .prettyPeek() // prints JSON out to console to view parsed data
+                .then().statusCode(201).log().all();
+    }
+
+    @Test(groups = {"fails","404"})
+    public void getBadAddress(){
+        RequestSpecification requestSpecification = new RestAssuredConfiguration().getRequestSpecification();
+        given().spec(requestSpecification).get("/doesntExist").then().statusCode(404).log().all();
+    }
+
+    @Test(groups = {"fails","415"})
+    public void unsupportedMediaType(){
+        RequestSpecification requestSpecification = new RestAssuredConfiguration().getRequestSpecHTML();
+        requestSpecification.accept(ContentType.JSON).formParams("id",3).log().all();
+        given().spec(requestSpecification).post(EndPoint.POST_CUSTOMER_PARAM).then().statusCode(415).log().all();
+    }
+//
+//    @Test(groups = {"fails","417"})
+//    public void expectationFailed(){
+//
+//    }
+//
+//    @Test(groups = {"fails","422"})
+//    public void unprocessableEntity(){
+//
 //    }
 
 }
